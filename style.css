@@ -1,7 +1,89 @@
 /*
-Color Palette: #AEBDCA #7895B2 #AAC4FF #000000
+Color Palette: #AEBDCA #7895B2 #AAC4FF #000000 #628E90 #DFDFDE
 background color:  
 font color:        
 secondary color:   
 tertiary color:    
 */@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@900&display=swap');
+
+html {
+    font-size: 62.5%  /* Default font size is 16px - 62.5% of 16 is 10pz - 1 rem (relative unit) now will be eqivalent to 10px} */
+    
+}
+
+
+header {
+    margin:0 4rem;
+    letter-spacing: 0.8rem;
+    text-align: center;
+    border-bottom: 3px solid #DFDFDE ;
+    border-right: 3px solid #DFDFDE;
+    border-left: 3px solid #DFDFDE;
+    padding: 0.5rem;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+body {
+    background-color:  #7895B2;
+    color:#DFDFDE;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+cite {
+    font-size: 2rem;
+    
+}
+
+p {
+    font-size: 1rem;
+}
+
+.imageCard {
+    display: box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 5rem;
+}
+
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 7px 9px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .2);
+}
+
+.imgCard a {
+    text-decoration: none;
+    color:#000000 ;
+}
+
+.cardText {
+    color: #DFDFDE;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media (min-width:768px) {
+    header
+    {
+        font-size: 1.6rem;
+    } 
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .imageCard {
+        max-width: 25%;
+    }
+}
